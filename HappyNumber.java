@@ -8,18 +8,27 @@ public class HappyNumber {
             sum+=rem*rem;
             n/=10;
         }
-        return sum;
+        return sum; 
     }
+    // static Boolean happyOrNot(int n){
+    //     int slow=n;
+    //     int fast=n;
+    //     do{
+    //         slow = calcSquare(slow);
+    //         fast=calcSquare(calcSquare(fast));
+    //     }while(slow!=fast);
+    //     if(slow==1) return true;
+    //     else 
+    //     return false;
+    // }
     static Boolean happyOrNot(int n){
-        int slow=n;
-        int fast=n;
-        do{
-            slow = calcSquare(slow);
-            fast=calcSquare(calcSquare(fast));
-        }while(slow!=fast);
-        if(slow==1) return true;
-        else 
-        return false;
+        HashSet<Integer> set = new HashSet<>();
+        while(n!=1){
+            if(set.contains(n)) return false;
+            set.add(n);
+            n = calcSquare(n);
+        }
+        return true;
     }
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
