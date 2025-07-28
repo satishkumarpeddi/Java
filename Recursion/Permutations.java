@@ -21,10 +21,7 @@ public class Permutations {
         boolean used[] = new boolean[arr.length];
         generateSubset(arr,used,new ArrayList<>(),result);
         for(List<Integer> subset:result){
-            for(int num:subset){
-                System.out.print(num+" ");
-            }
-            System.out.println();
+            System.out.println(subset);
         }
     }
     public static void main(String[] args){

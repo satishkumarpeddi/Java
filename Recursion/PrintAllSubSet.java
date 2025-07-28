@@ -14,14 +14,11 @@ public class PrintAllSubSet {
         List<List<Integer>> result = new ArrayList<>();
         generateSubSet(0,arr,new ArrayList<>(),result);
         for(List<Integer> subsets : result){
-            for(int num:subsets){
-                System.out.print(num+ " ");
-            }
-            System.out.println();
+            System.out.println(subsets);
         }
     }
     public static void main(String[] args){
-        int arr[] = new int[]{1,2};
+        int arr[] = new int[]{2,5,6};
         printAllSubSet(arr,arr.length);
     }
 }
