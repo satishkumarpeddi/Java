@@ -6,9 +6,11 @@ public class CheckPalindromeString {
         while(left<right){
             if(left<right&&!Character.isLetterOrDigit(str.charAt(left))){
                 left++;
+                continue; // Inorder to skip the iteration 
             }
             if(left<right&&!Character.isLetterOrDigit(str.charAt(right))){
                 right--;
+                continue; // Inorder to skip the iteration
             }
             if (Character.toLowerCase(str.charAt(left)) != Character.toLowerCase(str.charAt(right))) {
                 return false;
