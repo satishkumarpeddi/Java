@@ -1,0 +1,7 @@
+AtomicInteger 
+BitSet
+In Java, all threads have a default priority of 5, unless explicitly changed using the setPriority method.
+An anonymous class is created using the new keyword.
+Unlike ArrayList, a LinkedList has no predefined size.
+RandomAccess is a marker interface to indicate that a collection supports fast random access.
+'A new object is always created in young space. Once young space is full, a special young collection is run where objects which have lived long enough are moved to old space and memory is freed up in young space for new objects.
