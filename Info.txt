@@ -5,3 +5,11 @@ An anonymous class is created using the new keyword.
 Unlike ArrayList, a LinkedList has no predefined size.
 RandomAccess is a marker interface to indicate that a collection supports fast random access.
 'A new object is always created in young space. Once young space is full, a special young collection is run where objects which have lived long enough are moved to old space and memory is freed up in young space for new objects.
+When an object is no longer referenced, it may be reclaimed by the garbage collector. If an object declares a finalizer, the finalizer is executed before the object is reclaimed to give the object a last chance to clean up resources that would not otherwise be released. When a class is no longer needed, it may be unloaded.
+The stack memory size depends on the JVM and operating system.
+By default, InputStreamReader uses the platform’s default encoding, which is UTF-8 on most systems.
+The default priority of thread is 5
+A WeakHashMap allows keys to be garbage collected if there are no strong references to them.
+LinkedList in Java is implemented as a doubly linked list.
+A mark and sweep garbage collection consists of two phases, the mark phase and the sweep phase. I mark phase all the objects reachable by java threads, native handles and other root sources are marked alive and others are garbage. In the sweep phase, the heap is traversed to find gaps between live objects and the gaps are marked free list used for allocating memory to new objects.
+Collections.suffles()

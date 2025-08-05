@@ -18,7 +18,7 @@ public class LetterCombinationsPhonePattern {
         System.out.println(result);
     }
     public static void main(String[] args){
-        String digits = "23";
+        String digits = "92";
         getAllCombinations(digits);
     }
 }
