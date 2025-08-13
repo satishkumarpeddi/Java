@@ -13,3 +13,14 @@ A WeakHashMap allows keys to be garbage collected if there are no strong referen
 LinkedList in Java is implemented as a doubly linked list.
 A mark and sweep garbage collection consists of two phases, the mark phase and the sweep phase. I mark phase all the objects reachable by java threads, native handles and other root sources are marked alive and others are garbage. In the sweep phase, the heap is traversed to find gaps between live objects and the gaps are marked free list used for allocating memory to new objects.
 Collections.suffles()
+Sieve Algorithm 
+Lambda expressions, introduced in Java 8, enable functional programming in Java.
+PrintWriter uses the platform's default encoding unless specified otherwise.
+ArrayList internally uses a dynamic array, while LinkedList uses a doubly linked list.
+A StringBuilder has a default capacity of 16 characters.
+A mark and sweep garbage collection consists of two phases, the mark phase and the sweep phase. I mark phase all the objects reachable by java threads, native handles and other root sources are marked alive and others are garbage. In the sweep phase, the heap is traversed to find gaps between live objects and the gaps are marked free list used for allocating memory to new objects.
+Unchecked exceptions are not checked at compile time. Example ArrayOutOfIndexException
+A CopyOnWriteArrayList has a default capacity of 16.
+The default value of a char is '\u0000' (null character).
+There are two ways to request a JVM to run a garbage collector. These are the System.gc() method and the Runtime.getRuntime().gc() method.
+1MB (megabyte) = 8388608 bits.
