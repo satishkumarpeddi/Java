@@ -3,7 +3,7 @@ abstract class Shape{
   abstract void numberOfSides();
 }
 class Traingle extends Shape{
-    @Override
+    // @Override
      void numberOfSides(){
         System.out.println("The number of sides in a triangle 3");
     }
