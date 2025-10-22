@@ -1,5 +1,5 @@
 package ParallelProgramming;
-import java.util.*;
+// import java.util.*;
 class AddArray extends Thread{
     private int[] arr;
     private int start,end;
@@ -19,7 +19,7 @@ class AddArray extends Thread{
             partialSum+=arr[i];
             System.out.println("Thread "+Thread.currentThread().getName()+" adding arr["+i+"]="+arr[i]);
             try{
-                Thread.sleep(100);
+                Thread.sleep(1000);
             }catch(InterruptedException e){
                 e.printStackTrace();
             }
