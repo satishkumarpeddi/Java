@@ -20,7 +20,7 @@ class AdditionOfMatrix implements Runnable{
 public class AdditionOfMatrixUsingRunnableInterface {
     public static void main(String[] args){
        int rows = 4;
-        int cols = 4;
+        int cols = 3;
           int[][] M1 = {
                 {1, 22, 3},
                 {4, 5, 6},
@@ -37,7 +37,7 @@ public class AdditionOfMatrixUsingRunnableInterface {
         int[][] result = new int[rows][cols];
         Thread[] thread = new Thread[rows];
         for(int i=0;i<rows;i++){
-            thread[i]= new AdditionMatrix(i, M1, M2, result);
+            thread[i]= new Thread(new AdditionMatrix(i, M1, M2, result));
             thread[i].start();
         }
         for(int i=0;i<rows;i++){
@@ -55,7 +55,7 @@ public class AdditionOfMatrixUsingRunnableInterface {
             for(int j=0;j<cols;j++){
                 System.out.print(result[i][j]+" ");
             }
-            System.out.println(" ]");
+            System.out.println("]");
         }
 
     }
