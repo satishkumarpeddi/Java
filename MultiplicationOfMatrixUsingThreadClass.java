@@ -17,7 +17,7 @@ class MultiplicationMatrix extends Thread{
         for(int j=0;j<length_Of_M2;j++){
             result[row][j]=0;
             for(int k=0;k<length_Of_M1_M2;k++){
-                result[row][j]+=M1[row][j]*M2[k][j];
+                result[row][j]+=M1[row][k]*M2[k][j];
             }
         }
     }
