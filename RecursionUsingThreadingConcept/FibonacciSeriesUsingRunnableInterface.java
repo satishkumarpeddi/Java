@@ -1,5 +1,5 @@
 package RecursionUsingThreadingConcept;
-class FibonacciThreading extends Thread{
+class FibonacciThreading implements Runnable{
     private int n;
     private int result;
     public FibonacciThreading(int n){
