@@ -26,7 +26,7 @@ public class BTreeLayoutPreOrder {
         dfs(root,0,nodes);
         return nodes;
     }
-    //inorder
+    //preorder
     private static void dfs(TreeNode node,int depth,List<LayoutNode> nodes){
         if(node==null) return;
         nodes.add(new LayoutNode(node, x++, depth));
