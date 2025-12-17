@@ -26,6 +26,7 @@ public class BTreeLayout {
         dfs(root,0,nodes);
         return nodes;
     }
+    //inorder
     private static void dfs(TreeNode node,int depth,List<LayoutNode> nodes){
         if(node==null) return;
         dfs(node.left,depth+1,nodes);
