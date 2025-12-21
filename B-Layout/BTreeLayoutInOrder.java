@@ -18,7 +18,7 @@ class LayoutNode{
         this.y=y;
     }
 }
-public class BTreeLayout {
+public class BTreeLayoutInOrder {
     private static int x;
     public static List<LayoutNode> layoutTree(TreeNode root){
         List<LayoutNode> nodes = new ArrayList<>();
