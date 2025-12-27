@@ -158,7 +158,8 @@ public class AVL{
             } 
         });
         Display.displayMethod(avlnodestructure.root); 
-        System.out.print("Enter a value for node to be deleted form the AVL tree: ");
+        
+        System.out.print("\nEnter a value for node to be deleted form the AVL tree: ");
         int valueForDeletedNode= sc.nextInt();
         avlnodestructure.root = Deletion.deletion(avlnodestructure.root, valueForDeletedNode);
 Display.displayMethod(avlnodestructure.root); 
