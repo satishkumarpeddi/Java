@@ -11,7 +11,7 @@ public class BinaryOpNode extends ASTNode{
     void print(){
         System.out.print("( ");
         left.print();
-        System.out.print("("+operator+")");
+        System.out.print(operator);
         right.print();
         System.out.print(" )");
     }
