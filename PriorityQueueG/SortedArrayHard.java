@@ -52,10 +52,7 @@ public class SortedArrayHard {
             array[left]+=array[right];
             removed[right]=true;
             rem--;
-            if (nxt != n) {
-                prev[nxt] = left;
-        }
-next[left] = nxt;
+             
             if(pre!=-1){
                 pq.add(new P(array[pre]+array[left],pre));
                 if(array[pre]<=array[left]) sorted++;
