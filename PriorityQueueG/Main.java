@@ -1,4 +1,4 @@
-package PriorityQueue;
+package PriorityQueueG;
 import java.util.PriorityQueue;
 // Heap based data structure
 import java.util.Comparator;
