@@ -3,6 +3,8 @@ import java.io.*;
 //Scanner Class ===> Slower
 //BufferedReader ===> Intermediate
 //FastScanner Class ===> Faster
+
+//FastScanner for better input handle 
 public class Main{
     public static void main(String[] args)throws IOException{
 
