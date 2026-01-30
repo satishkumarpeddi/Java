@@ -9,6 +9,7 @@ public class CountSubsetWithTargetSumII {
             else
                 nsum+=num;
         }
+        if(target>psum&&target<nsum) return 0;
         dp = new HashMap<>();
         return solve(0,arr,target);
     }
