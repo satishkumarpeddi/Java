@@ -13,8 +13,8 @@ public class SubSetSumDynamicProgramming {
         return dp[target];
     }
     public static void main(String[] args){
-        int nums[] = {2,1,3,4,5};
-        int target=5;
+        int nums[] = {1,3,2};
+        int target=3;
      boolean exitOrNot =  getAllSubSetPossibleOrNot(nums,target);
      System.out.println(exitOrNot);
     }

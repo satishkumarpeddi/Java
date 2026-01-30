@@ -1,6 +1,6 @@
 import java.util.*;
 public class CombinationTwoArray {
-    public static void getAllSubSets(int nums[],int targetValue){
+    public static void getAlls(int nums[],int targetValue){
         ArrayList<int[]> result = new ArrayList<>();
         for(int i=0;i<nums.length;i++){
             for(int j=i+1;j<nums.length;j++){
@@ -22,6 +22,6 @@ public class CombinationTwoArray {
     }
     public static void main(String[] args){
         int nums[] = {1,2,3,4,5};
-        getAllSubSets(nums,5);
+        getAlls(nums,5);
     }
 }

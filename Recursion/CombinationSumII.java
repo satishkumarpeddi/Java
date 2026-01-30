@@ -23,8 +23,8 @@ public class CombinationSumII {
         
     }
     public static void main(String[] args){
-        int arr[] = {1,2,3,1};
-        int target = 5;
+        int arr[] = {10,20,30};
+        int target = 25;
         getAllCombinationSumII(arr,target);
     }
 }
