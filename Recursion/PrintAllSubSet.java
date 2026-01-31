@@ -18,7 +18,7 @@ public class PrintAllSubSet {
         }
     }
     public static void main(String[] args){
-        int arr[] = new int[]{2,5,6};
+        int arr[] = new int[]{1,2,1};
         printAllSubSet(arr,arr.length);
     }
 }
