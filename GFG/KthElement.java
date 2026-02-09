@@ -20,11 +20,13 @@ public class KthElement {
                     ans = low;
                     min = arr[low];
                 }
+                low = mid+1;
             }else{
                 if(arr[mid]<min){
                     ans = mid;
                     min = arr[low];
                 }
+                high = mid-1;
             }
         }
         System.out.println("The Kth Element Of The Array : "+ans);
